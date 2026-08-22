@@ -1,0 +1,48 @@
+openapi: 3.0.3
+info:
+  title: StudentSathi API — Reference
+  version: 1.0.0
+paths:
+  /health:
+    get:
+      tags: [System]
+      summary: Health probe
+      responses:
+        '200': { description: OK }
+
+components:
+  schemas:
+    ApiResponse:
+      type: object
+      properties:
+        success: { type: boolean }
+        message: { type: string }
+        data: {}
+        meta:
+          type: object
+          properties:
+            page: { type: integer }
+            limit: { type: integer }
+            total: { type: integer }
+            totalPages: { type: integer }
+    Scheme:
+      type: object
+      properties:
+        _id: { type: string }
+        title: { type: string }
+        description: { type: string }
+        category: { type: string }
+        state: { type: string }
+        educationLevel: { type: string }
+        eligibility: { type: string }
+        incomeLimit: { type: number }
+        benefits: { type: string }
+        officialLink: { type: string }
+        deadline: { type: string, format: date-time }
+    User:
+      type: object
+      properties:
+        _id: { type: string }
+        name: { type: string }
+        email: { type: string }
+        role: { type: string, enum: [student, admin] }

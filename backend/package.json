@@ -1,0 +1,53 @@
+{
+  "name": "studentsathi-backend",
+  "version": "1.0.0",
+  "description": "Production-ready backend for StudentSathi \u2014 AI-powered student empowerment platform.",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node src/seed/seed.js",
+    "seed:reset": "node src/seed/seed.js --reset",
+    "lint": "eslint src --ext .js",
+    "docker:build": "docker build -t studentsathi-backend .",
+    "docker:run": "docker run -p 5000:5000 --env-file .env studentsathi-backend"
+  },
+  "keywords": [
+    "studentsathi",
+    "express",
+    "mongodb",
+    "jwt",
+    "education"
+  ],
+  "author": "StudentSathi Team",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.0.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.0",
+    "morgan": "^1.10.0",
+    "pino": "^9.5.0",
+    "pino-pretty": "^11.3.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "xss-clean": "^0.1.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "eslint": "^9.14.0",
+    "nodemon": "^3.1.7"
+  }
+}

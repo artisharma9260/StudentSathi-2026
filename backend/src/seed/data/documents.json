@@ -1,0 +1,66 @@
+[
+  {
+    "documentName": "Aadhaar Card",
+    "slug": "aadhaar",
+    "summary": "12-digit unique identity number issued by UIDAI.",
+    "requiredDocuments": ["Proof of Identity", "Proof of Address", "Date of Birth Proof"],
+    "steps": [
+      { "order": 1, "title": "Book appointment", "description": "Visit uidai.gov.in and book an enrolment slot." },
+      { "order": 2, "title": "Visit centre", "description": "Carry originals for biometric capture." },
+      { "order": 3, "title": "Enrolment", "description": "Fingerprints, iris scan and photograph are recorded." },
+      { "order": 4, "title": "Delivery", "description": "Aadhaar arrives by post in 15–30 days." }
+    ],
+    "fees": "Free (first enrolment)",
+    "timeline": "15–30 days",
+    "officialWebsite": "https://uidai.gov.in",
+    "commonMistakes": ["Wrong address in form", "Missing biometric during retake"]
+  },
+  {
+    "documentName": "PAN Card",
+    "slug": "pan",
+    "summary": "Permanent Account Number for financial identification.",
+    "requiredDocuments": ["Aadhaar", "Passport-size photo", "Signature"],
+    "steps": [
+      { "order": 1, "title": "Apply online", "description": "Use NSDL or UTIITSL portal." },
+      { "order": 2, "title": "Aadhaar e-KYC", "description": "Auto-verify via OTP." },
+      { "order": 3, "title": "Payment", "description": "Pay ₹107 (Indian address)." },
+      { "order": 4, "title": "Receive PAN", "description": "e-PAN in 24 hours, physical PAN in 15 days." }
+    ],
+    "fees": "₹107 (India), ₹1017 (foreign)",
+    "timeline": "24 hours (e-PAN)",
+    "officialWebsite": "https://www.onlineservices.nsdl.com",
+    "commonMistakes": ["Signature outside box", "Photo not recent"]
+  },
+  {
+    "documentName": "Voter ID",
+    "slug": "voter-id",
+    "summary": "Electoral Photo Identity Card issued by ECI.",
+    "requiredDocuments": ["Age Proof", "Address Proof", "Passport Photo"],
+    "steps": [
+      { "order": 1, "title": "Fill Form 6", "description": "Available on nvsp.in / Voter Helpline app." },
+      { "order": 2, "title": "Upload documents", "description": "Attach scans of all proofs." },
+      { "order": 3, "title": "Verification", "description": "BLO visits your address." },
+      { "order": 4, "title": "Receive EPIC", "description": "Card is dispatched within 30 days." }
+    ],
+    "fees": "Free",
+    "timeline": "30 days",
+    "officialWebsite": "https://voters.eci.gov.in",
+    "commonMistakes": ["Age proof missing", "Address mismatch"]
+  },
+  {
+    "documentName": "Driving Licence",
+    "slug": "driving-licence",
+    "summary": "Issued by state RTOs under Motor Vehicles Act.",
+    "requiredDocuments": ["Aadhaar", "Age Proof", "Learner's Licence"],
+    "steps": [
+      { "order": 1, "title": "Apply for Learner's LL", "description": "Fill Form 2 on parivahan.gov.in." },
+      { "order": 2, "title": "Pass LL test", "description": "Online / RTO test on road signs." },
+      { "order": 3, "title": "Practice 30 days", "description": "Minimum waiting period." },
+      { "order": 4, "title": "Take DL test", "description": "Driving test at RTO." }
+    ],
+    "fees": "₹200–1000 depending on state",
+    "timeline": "30–45 days",
+    "officialWebsite": "https://parivahan.gov.in",
+    "commonMistakes": ["Booking test before 30 days", "Wrong vehicle class"]
+  }
+]
